@@ -35,7 +35,8 @@ export function InProgressDialog({
             </p>
             <p className="text-sm">
               La aplicación estará disponible muy pronto. Mientras tanto,
-              puedes registrarte para recibir acceso temprano.
+              puedes registrarte para recibir acceso temprano 
+              o saber que contamos con tu apoyo.
             </p>
           </DialogDescription>
         </DialogHeader>

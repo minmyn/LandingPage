@@ -7,6 +7,12 @@ interface HeroProps {
 }
 
 export function Hero({ onRegisterClick }: HeroProps) {
+  
+  const handleRegisterClick = () => {
+    const registrationLink = "https://forms.gle/Dqt5BuS8w1a2dPfq9";
+    window.open(registrationLink, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto">
@@ -33,7 +39,8 @@ export function Hero({ onRegisterClick }: HeroProps) {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" onClick={onRegisterClick} className="gap-2">
+              {/* Ahora llama a la función local handleRegisterClick */}
+              <Button size="lg" onClick={handleRegisterClick} className="gap-2">
                 <Target className="size-5" />
                 Regístrate Ahora
               </Button>

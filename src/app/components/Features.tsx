@@ -21,7 +21,7 @@ const features = [
     icon: Library,
     title: "Biblioteca Personal Automatizada",
     description:
-      "Gestión de lecturas mediante indexación y consumo de API externa de metadatos de libros y mangas, complementada con rastreadores web, reduciendo el esfuerzo de llenado de datos.",
+      "Gestión de lecturas mediante indexación y consumo de API externa de metadatos de libros y mangas, reduciendo el esfuerzo de llenado de datos.",
     color: "text-purple-600",
     bg: "bg-purple-50",
   },

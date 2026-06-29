@@ -49,16 +49,6 @@ export function Footer() {
                   Funcionalidades
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Precios
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Roadmap
-                </a>
-              </li>
             </ul>
           </div>
 
