@@ -16,22 +16,26 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // Base path para GitHub Pages basado en tu carpeta actual
+  // Base path estricto para subdirectorio de GitHub Pages
   base: '/LandingPage/',
+  
   plugins: [
     figmaAssetResolver(),
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
+  
   resolve: {
     alias: {
-      // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
     },
   },
 
-  // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
+  // Obliga a Vite a generar rutas relativas para los assets inyectados en el HTML final
+  build: {
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  },
+
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
